@@ -13,11 +13,20 @@ body {
 }
 
 @layer components {
+  footer {
+    @apply bg-gray-50;
+  }
+  .color-primary {
+    @apply text-orange-500;
+  }
   .btn {
     @apply text-base py-[10px] px-[14px] xl:text-xl rounded-md;
   }
   .btn-primary {
     @apply bg-orange-500 text-white;
+  }
+  .copyright {
+    @apply bg-black/70 text-white py-6 text-center;
   }
 }
 
