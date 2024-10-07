@@ -28,6 +28,9 @@ body {
   .btn-primary {
     @apply bg-orange-500 text-white;
   }
+  input {
+    @apply p-[22px] border border-gray-300 rounded-2xl w-full text-xl outline-none bg-gray-50;
+  }
   .copyright {
     @apply bg-black/70 text-white py-6 text-center;
   }
