@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./_components/HeroSection";
 import AboutSection from "./_components/AboutSection";
 import ServicesSection from "./_components/ServicesSection";
+import CTASection from "./_components/CTASection";
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <CTASection />
     </>
   );
 };
