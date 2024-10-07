@@ -9,7 +9,7 @@ interface ServiceCardProps {
 const ServiceCard = ({ service }: ServiceCardProps) => {
   const { icon, name, description } = service;
   return (
-    <div className="px-5 py-10 bg-gray-50 rounded-xl">
+    <div className="px-5 py-[54px] bg-gray-50 rounded-xl">
       <Image
         src={icon}
         alt={name}
@@ -17,7 +17,9 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
         height={50}
         className="w-16 h-16 object-contain"
       />
-      <h3 className="mt-6 mb-4 text-3xl font-semibold">{name}</h3>
+      <h3 className="mt-6 mb-4 text-[32px] leading-[48px] font-semibold">
+        {name}
+      </h3>
       <p className="text-lg">{description}</p>
     </div>
   );
