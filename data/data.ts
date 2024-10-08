@@ -4,12 +4,16 @@ import AppDesign from "@/public/images/app-design.png";
 import GraphicDesign from "@/public/images/graphics-design.png";
 import {
   HeaderLinksType,
+  ProjectType,
   ServiceType,
   SkillType,
   SocialLinkType,
   TestimonialType,
 } from "@/typescript/types";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import ProjectOne from "@/public/images/projects/project-1.png";
+import ProjectTwo from "@/public/images/projects/project-2.png";
+import ProjectThree from "@/public/images/projects/project-3.png";
 
 export const headerLinks: HeaderLinksType[] = [
   {
@@ -170,4 +174,37 @@ export const testimonials: TestimonialType[] = [
     image:
       "https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
+];
+
+export const projects: ProjectType[] = [
+  {
+    id: 1,
+    image: ProjectOne,
+    name: "AirCalling Landing Page Design",
+    tag: "Web Design",
+  },
+  {
+    id: 2,
+    image: ProjectTwo,
+    name: "Business Landing Page Design",
+    tag: "UI/UX",
+  },
+  {
+    id: 3,
+    image: ProjectThree,
+    name: "Ecom Web Page Design",
+    tag: "App Design",
+  },
+  // {
+  //   id: 4,
+  //   image: ProjectOne,
+  //   name: "Appstack Landing Page Design",
+  //   tag: "App Design",
+  // },
+  // {
+  //   id: 5,
+  //   image: ProjectTwo,
+  //   name: "Smash Logo Design",
+  //   tag: "Graphics Design",
+  // },
 ];
