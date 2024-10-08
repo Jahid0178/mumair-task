@@ -25,3 +25,10 @@ export type ServiceType = {
   name: string;
   description: string;
 };
+
+export type TestimonialType = {
+  id: number | string;
+  name: string;
+  description: string;
+  image: string;
+};
