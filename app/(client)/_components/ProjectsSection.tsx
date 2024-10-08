@@ -23,7 +23,7 @@ const ProjectsSection = () => {
       : projects.filter((project) => project.tag === activeTab);
 
   return (
-    <section>
+    <section id="projects">
       <div className="container">
         <SectionHeading
           title="Projects"

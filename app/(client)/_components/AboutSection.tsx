@@ -6,7 +6,7 @@ import ProgressBar from "@/components/ProgressBar/ProgressBar";
 
 const AboutSection = () => {
   return (
-    <section>
+    <section id="about-me">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
           <div>

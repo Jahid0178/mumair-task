@@ -4,7 +4,10 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 
 const CTASection = () => {
   return (
-    <section className="pb-[140px]">
+    <section
+      className="pb-[140px]"
+      id="contact"
+    >
       <div className="container">
         <SectionHeading
           title="Lets Design Together"

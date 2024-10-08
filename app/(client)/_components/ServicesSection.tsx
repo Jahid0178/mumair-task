@@ -6,7 +6,7 @@ import { ServiceType } from "@/typescript/types";
 
 const ServicesSection = () => {
   return (
-    <section>
+    <section id="services">
       <div className="container">
         <SectionHeading
           title="Services"

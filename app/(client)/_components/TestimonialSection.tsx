@@ -6,7 +6,7 @@ import TestimonialSlider from "@/components/TestimonialSlider/TestimonialSlider"
 
 const TestimonialSection = () => {
   return (
-    <section>
+    <section id="testimonials">
       {/* <div className="container"> */}
       <div className="container">
         <SectionHeading
