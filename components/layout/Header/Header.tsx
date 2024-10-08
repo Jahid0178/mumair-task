@@ -4,7 +4,7 @@ import HeaderLinks from "./HeaderLinks";
 
 const Header = () => {
   return (
-    <header className="pt-[61px] pb-2.5 flex items-center">
+    <header className="pt-[61px] pb-2.5 flex items-center relative">
       <div className="container">
         <div className="flex justify-between items-center gap-3">
           <Logo />

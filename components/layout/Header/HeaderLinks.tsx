@@ -1,12 +1,16 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
-import menuIcon from "@/public/svg/menu.svg";
+import Button from "@/components/common/Button/Button";
+import ResponsiveHeader from "./ResponsiveHeader";
 import { headerLinks } from "@/data/data";
 import { HeaderLinksType } from "@/typescript/types";
-import Image from "next/image";
-import Button from "@/components/common/Button/Button";
+import { IoMenu } from "react-icons/io5";
 
 const HeaderLinks = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
       <ul className="hidden lg:flex items-center gap-4">
@@ -24,14 +28,13 @@ const HeaderLinks = () => {
           <Button className="btn-primary">Download CV</Button>
         </li>
       </ul>
-      <button className="block lg:hidden p-2">
-        <Image
-          src={menuIcon}
-          alt="menu"
-          width={20}
-          height={20}
-        />
+      <button
+        className="block lg:hidden p-2"
+        onClick={() => setOpen(true)}
+      >
+        <IoMenu size={30} />
       </button>
+      {open && <ResponsiveHeader close={() => setOpen(false)} />}
     </div>
   );
 };
